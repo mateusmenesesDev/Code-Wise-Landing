@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 const config = {
-  darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -23,6 +22,7 @@ const config = {
       transparent: "transparent",
       current: "currentColor",
       base: "var(--color-base)",
+      "base-dark": "var(--color-base-dark)",
       primary: "var(--color-primary)",
       secondary: "var(--color-secondary)",
       accent: "var(--color-accent)",
