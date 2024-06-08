@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect";
 
 export default function Home() {
   return (
@@ -48,9 +49,16 @@ export default function Home() {
       </section>
       <div className="mt-12 flex flex-col gap-8 lg:flex lg:flex-row lg:items-start lg:text-xl">
         <section className="flex flex-1 flex-col gap-6">
-          <h2 className="text-error border-b border-primary pb-2 text-2xl font-semibold lg:text-5xl">
-            O PROBLEMA dos cursos atuais
-          </h2>
+          <TypewriterEffectSmooth
+            words={[
+              {
+                text: "O PROBLEMA dos cursos atuais",
+                className:
+                  "!border-b !border-error !lg:border-b !lg:border-error !pb-2 font-semibold !text-[#ed2a3b]",
+              },
+            ]}
+            cursorClassName="bg-error block h-8 mt-1 lg:mt-0 w-[4px] rounded-sm sm:h-6 xl:h-12"
+          />
           <p>
             A maioria dos cursos disponíveis no mercado ensinam apenas o básico
             das tecnologias, sem ensinar como aplicar esses conhecimentos na
@@ -74,9 +82,16 @@ export default function Home() {
           </ul>
         </section>
         <section className="flex-1">
-          <h2 className="border-b border-primary pb-2 text-2xl font-semibold text-primary lg:text-5xl">
-            O que as empresas procuram
-          </h2>
+          <TypewriterEffectSmooth
+            words={[
+              {
+                text: "O que as empresas procuram?",
+                className:
+                  "!border-b !border-primary !lg:border-b !lg:border-error !pb-2 font-semibold !text-primary",
+              },
+            ]}
+            cursorClassName="bg-primary block h-8 mt-1 lg:mt-0 w-[4px] rounded-sm sm:h-6 xl:h-12"
+          />
           <p className="mt-6">
             Saber fazer um{" "}
             <span className="text-lg font-semibold text-primary">
