@@ -9,6 +9,11 @@ const config = {
   ],
   prefix: "",
   theme: {
+    extend: {
+      screens: {
+        "md+": "900px",
+      },
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -22,10 +27,14 @@ const config = {
       transparent: "transparent",
       current: "currentColor",
       base: "var(--color-base)",
-      "base-dark": "var(--color-base-dark)",
       primary: "var(--color-primary)",
       secondary: "var(--color-secondary)",
       accent: "var(--color-accent)",
+      error: "var(--color-error)",
+      "base-dark": "var(--color-base-dark)",
+      "primary-dark": "var(--color-primary-dark)",
+      "secondary-dark": "var(--color-secondary-dark)",
+      "accent-dark": "var(--color-accent-dark)",
     },
   },
   plugins: [require("tailwindcss-animate")],

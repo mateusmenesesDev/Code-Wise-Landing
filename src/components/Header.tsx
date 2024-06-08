@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const menuLinks = [
   { title: "A Verdade sobre os Cursos Atuais", link: "courses" },
   { title: "O que as empresas realmente precisam", link: "companies" },
@@ -7,18 +9,19 @@ const menuLinks = [
 
 export function Header() {
   return (
-    <header>
-      <nav className="flex items-center justify-between">
-        <h1 className="w-full text-lg font-semibold">Mentoria gratuita!</h1>
-        <ul className="hidden lg:flex">
-          {menuLinks.map((link) => (
-            <li key={link.link}>{link.title}</li>
-          ))}
-        </ul>
+    <header className="relative z-50">
+      <nav className="fixed top-0 flex w-full items-center justify-between bg-primary px-4 py-3 text-black lg:px-24 lg:py-4">
+        <h1 className="w-full text-lg font-semibold lg:text-xl">
+          Mentoria gratuita!
+        </h1>
         <div className="flex w-full justify-end">
-          <button className="rounded-full bg-primary p-3 text-base">
-            Agende gratuitamente
-          </button>
+          <Link
+            href="https://calendly.com/mateusppa10/mentoria"
+            target="_blank"
+            className="rounded-full bg-accent p-2 text-base font-semibold transition-all hover:bg-secondary hover:text-white lg:px-4 lg:text-xl"
+          >
+            Agende seu horário
+          </Link>
         </div>
       </nav>
     </header>
