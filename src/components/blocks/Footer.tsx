@@ -3,22 +3,19 @@ import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col px-4">
+    <footer className="flex flex-col px-4 pb-12">
       <section className="flex flex-col items-center justify-center md:pt-12">
         <div className="flex flex-col">
-          <h2 className="text-center text-sm font-semibold sm:text-xl md:text-2xl lg:text-left lg:text-6xl">
+          <h2 className="text-center font-semibold sm:text-xl md:text-2xl lg:text-left lg:text-6xl">
             Pare de perder tempo e torne-se um{" "}
+            <span className="mt-2 block text-2xl text-primary">
+              Desenvolvedor Fullstack de{" "}
+              <span className="font-semibold text-accent md:text-5xl">
+                VERDADE
+              </span>{" "}
+              AGORA
+            </span>
           </h2>
-          <TypewriterEffectSmooth
-            words={[
-              {
-                text: "Desenvolvedor Fullstack de verdade AGORA",
-                className:
-                  "!font-semibold md:text-3xl sm:text-2xl text-lg !text-primary",
-              },
-            ]}
-            cursorClassName="bg-primary h-8 w-[4px] rounded-sm sm:h-6 xl:h-12"
-          />
         </div>
         <div className="flex">
           <Link
