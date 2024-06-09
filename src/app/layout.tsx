@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans";
 
 import { TRPCReactProvider } from "~/trpc/react";
 import { Header } from "~/components/Header";
+import Footer from "~/components/blocks/Footer";
 
 export const metadata = {
   title: "Create T3 App",
@@ -22,6 +23,7 @@ export default function RootLayout({
         <TRPCReactProvider>
           <Header />
           {children}
+          <Footer />
         </TRPCReactProvider>
       </body>
     </html>

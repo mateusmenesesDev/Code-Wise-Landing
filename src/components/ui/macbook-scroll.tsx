@@ -80,7 +80,7 @@ export const MacbookScroll = ({
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="text-neutral-800 mb-20 text-center text-3xl font-bold dark:text-white"
+        className="mb-20 text-center text-3xl font-bold text-neutral-800 dark:text-white"
       >
         {title ?? (
           <span>
@@ -97,7 +97,7 @@ export const MacbookScroll = ({
         translate={translate}
       />
       {/* Base area */}
-      <div className="bg-gray-200 relative -z-10 h-[22rem] w-[32rem] overflow-hidden rounded-2xl dark:bg-[#272729]">
+      <div className="relative -z-10 h-[22rem] w-[32rem] overflow-hidden rounded-2xl bg-gray-200 dark:bg-[#272729]">
         {/* above keyboard bar */}
         <div className="relative h-10 w-full">
           <div className="absolute inset-x-0 mx-auto h-4 w-[80%] bg-[#050505]" />
@@ -252,7 +252,7 @@ export const Keypad = () => {
           <span className="mt-1 inline-block">F12</span>
         </KBtn>
         <KBtn>
-          <div className="from-neutral-900 to-neutral-900 h-4  w-4 rounded-full bg-gradient-to-b from-20% via-black via-50% to-95% p-px">
+          <div className="h-4 w-4 rounded-full  bg-gradient-to-b from-neutral-900 from-20% via-black via-50% to-neutral-900 to-95% p-px">
             <div className="h-full w-full rounded-full bg-black" />
           </div>
         </KBtn>
@@ -582,7 +582,7 @@ export const KBtn = ({
       >
         <div
           className={cn(
-            "text-neutral-200 flex w-full flex-col items-center justify-center text-[5px]",
+            "flex w-full flex-col items-center justify-center text-[5px] text-neutral-200",
             childrenClassName,
             backlit && "text-white",
           )}

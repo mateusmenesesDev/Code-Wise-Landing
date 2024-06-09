@@ -45,7 +45,7 @@ export default function WhatYourWillLearn() {
   return (
     <section className="mt-16">
       <DemoProject />
-      <ul>
+      <ul className="md:pt-12">
         <li className="flex items-center">
           <span className="text-3xl font-semibold text-primary">1.</span>
           <p className="ml-4 lg:text-xl">
@@ -86,7 +86,7 @@ export default function WhatYourWillLearn() {
               className="w-full"
               containerClassName="w-full"
             >
-              <CardBody className="group/card from-slate-600 to-neutral-400 relative h-auto  w-full rounded-xl border bg-gradient-to-r p-6">
+              <CardBody className="group/card relative h-auto w-full rounded-xl  border bg-gradient-to-r from-slate-600 to-neutral-400 p-6">
                 <CardItem
                   translateZ="50"
                   className="text-3xl font-bold text-primary"
