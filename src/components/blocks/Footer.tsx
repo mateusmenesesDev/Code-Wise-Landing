@@ -7,7 +7,7 @@ export default function Footer() {
       <section className="flex flex-col items-center justify-center md:pt-12">
         <div className="flex flex-col">
           <h2 className="text-center text-sm font-semibold sm:text-xl md:text-2xl lg:text-left lg:text-6xl">
-            Pare de perder tempo e se torne um{" "}
+            Pare de perder tempo e torne-se um{" "}
           </h2>
           <TypewriterEffectSmooth
             words={[

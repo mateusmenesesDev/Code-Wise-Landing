@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect";
 import WhatYourWillLearn from "~/components/blocks/WhatYourWillLearn";
-import StopWastingTime from "~/components/blocks/StopWastingTime";
 
 export default function Home() {
   return (
