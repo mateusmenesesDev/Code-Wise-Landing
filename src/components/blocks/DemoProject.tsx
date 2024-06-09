@@ -23,7 +23,13 @@ export function DemoProject() {
           O que você aprenderá na mentoria?
         </h2>
         <div className="flex justify-center">
-          <Image src="/images/crm.png" width={600} height={600} alt="CRM" />
+          <Image
+            placeholder="blur"
+            src="/images/crm.png"
+            width={600}
+            height={600}
+            alt="CRM"
+          />
         </div>
       </div>
     </div>

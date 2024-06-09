@@ -97,6 +97,7 @@ export default function WhatYourWillLearn() {
                 <CardItem translateZ="100" className="mt-4 w-full">
                   <Image
                     src={project.image}
+                    placeholder="blur"
                     height="1000"
                     width="1000"
                     className="h-80 w-full rounded-xl object-fill group-hover/card:shadow-xl"

@@ -170,6 +170,7 @@ export const Lid = ({
       >
         <div className="absolute inset-0 rounded-lg bg-[#272729]" />
         <Image
+          placeholder="blur"
           src={src!}
           alt="Projeto da mentoria"
           fill
