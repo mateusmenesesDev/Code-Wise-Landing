@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect";
+import { Meteors } from "~/components/ui/meteors";
+import { DemoProject } from "~/components/blocks/DemoProject";
+import WhatYourWillLearn from "~/components/blocks/WhatYourWillLearn";
 
 export default function Home() {
   return (
-    <main className="m-auto max-w-[100rem] px-4 pt-12">
-      <section className="md+:items-center m-auto justify-between lg:flex lg:h-dvh lg:max-w-7xl">
+    <main className="m-auto max-w-[100rem] px-4 py-12">
+      <Meteors number={120} />
+      <section className="m-auto justify-between md+:items-center lg:flex lg:h-dvh lg:max-w-7xl">
         <div>
           <h1 className="mt-16 text-center text-3xl font-semibold lg:text-left lg:text-6xl">
             Mentoria Exclusiva para <br />{" "}
@@ -25,7 +29,7 @@ export default function Home() {
               Aprenda a se tornar um Desenvolvedor de{" "}
               <span className="bg-accent p-1 text-black">VERDADE</span>
             </span>{" "}
-            com a mentoria gratuita de um profissional dentro do mercado.
+            com a MENTORIA GRATUITA de um profissional dentro do mercado.
           </p>
           <div className="flex justify-center lg:justify-start">
             <Link
@@ -47,20 +51,23 @@ export default function Home() {
           />
         </div>
       </section>
-      <div className="mt-12 flex flex-col gap-8 lg:flex lg:flex-row lg:items-start lg:text-xl">
+      <div className="flex flex-col gap-8 pt-12 lg:flex lg:flex-row lg:items-start lg:text-xl">
         <section className="flex flex-1 flex-col gap-6">
           <TypewriterEffectSmooth
             words={[
               {
                 text: "O PROBLEMA dos cursos atuais",
                 className:
-                  "!border-b !border-error !lg:border-b !lg:border-error !pb-2 font-semibold !text-[#ed2a3b]",
+                  "!border-b !border-error !lg:border-b !lg:border-error !pb-2 !font-semibold !text-[#ed2a3b]",
               },
             ]}
             cursorClassName="bg-error block h-8 mt-1 lg:mt-0 w-[4px] rounded-sm sm:h-6 xl:h-12"
           />
           <p>
-            A maioria dos cursos disponíveis no mercado ensinam apenas o básico
+            A maioria dos cursos disponíveis no mercado ensinam{" "}
+            <span className="text-xl font-semibold text-error lg:text-2xl">
+              apenas o BÁSICO{" "}
+            </span>
             das tecnologias, sem ensinar como aplicar esses conhecimentos na
             prática.
           </p>
@@ -81,18 +88,18 @@ export default function Home() {
             <li>❌ Clones de aplicativos que não funcionam de verdade</li>
           </ul>
         </section>
-        <section className="flex-1">
+        <section className="flex flex-1 flex-col gap-6">
           <TypewriterEffectSmooth
             words={[
               {
-                text: "O que as empresas procuram?",
+                text: "O que as empresas procuram",
                 className:
-                  "!border-b !border-primary !lg:border-b !lg:border-error !pb-2 font-semibold !text-primary",
+                  "!border-b !border-primary !lg:border-b !lg:border-primary !pb-2 !font-semibold !text-primary",
               },
             ]}
             cursorClassName="bg-primary block h-8 mt-1 lg:mt-0 w-[4px] rounded-sm sm:h-6 xl:h-12"
           />
-          <p className="mt-6">
+          <p className="relative">
             Saber fazer um{" "}
             <span className="text-lg font-semibold text-primary">
               CRUD é o <span className="text-xl lg:text-2xl">MÍNIMO</span>
@@ -100,7 +107,7 @@ export default function Home() {
             que qualquer desenvolvedor deve saber! O que as empresas realmente
             procuram são pessoas que conhecem problemas reais, como:
           </p>
-          <ul className="mt-4 flex flex-col gap-2 px-8">
+          <ul className="flex flex-col gap-2 px-8">
             <li>
               ✅ Ter um sistema de autenticação completo (com login, logout,
               recuperação de senha, etc).
@@ -113,39 +120,15 @@ export default function Home() {
               ✅ Dar uma forma de pagamento online e facilitada aos clientes
             </li>
             <li>
-              ✅ Desenvolver um sistema com armazenamento de arquivos em nuvem
+              ✅ Adicionar uma funcionalidade armazenamento de arquivos em nuvem
+              com segurança
             </li>
+            <li>✅ Formas de acelerar o desenvolvimento de aplicações</li>
+            <li>✅ Desenvolvedores que não fiquem presos a stack</li>
           </ul>
         </section>
       </div>
-      <section className="mt-16">
-        <h2 className="border-b border-primary pb-2 text-2xl font-semibold">
-          O que você aprenderá?
-        </h2>
-        <ul className="mt-6">
-          <li className="flex items-center">
-            <span className="text-3xl font-semibold text-primary">1.</span>
-            <p className="ml-4">
-              Aprender a criar aplicações completas com o uso de tecnologias
-              modernas.
-            </p>
-          </li>
-          <li className="mt-4 flex items-center">
-            <span className="text-3xl font-semibold text-primary">2.</span>
-            <p className="ml-4">
-              Entender como funciona o mercado de trabalho e quais são as
-              habilidades mais valorizadas.
-            </p>
-          </li>
-          <li className="mt-4 flex items-center">
-            <span className="text-3xl font-semibold text-primary">3.</span>
-            <p className="ml-4">
-              Aprender a se destacar em processos seletivos e conseguir as
-              melhores vagas.
-            </p>
-          </li>
-        </ul>
-      </section>
+      <WhatYourWillLearn />
       {/* Seção de projetos diversos utilizando o card hover do aceternity" */}
       {/* Colocar uma seção dizendo: "Constra um sistema que realmente importa para o mercado" e mostrar utilizando a animação de pc com um sistema de CRM */}
       {/* Colocar em uma seção a imagem do Jira cheia de itens */}

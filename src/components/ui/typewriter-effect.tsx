@@ -133,7 +133,7 @@ export const TypewriterEffectSmooth = ({
                 <span
                   key={`char-${index}`}
                   className={cn(
-                    `text-2xl text-black lg:text-5xl dark:text-white `,
+                    `text-xl text-black lg:text-5xl dark:text-white `,
                     word.className,
                   )}
                 >
