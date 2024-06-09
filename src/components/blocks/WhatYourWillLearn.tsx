@@ -75,7 +75,7 @@ export default function WhatYourWillLearn() {
           </p>
         </li>
       </ul>
-      <section className="mt-6 lg:mt-12">
+      <div className="mt-6 lg:mt-12">
         <p className="mb-12 text-2xl font-semibold text-primary">
           E você aprenderá isso tudo fazendo:
         </p>
@@ -116,7 +116,7 @@ export default function WhatYourWillLearn() {
             </CardContainer>
           ))}
         </div>
-      </section>
+      </div>
     </section>
   );
 }

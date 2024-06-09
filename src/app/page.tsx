@@ -4,6 +4,7 @@ import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect";
 import { Meteors } from "~/components/ui/meteors";
 import { DemoProject } from "~/components/blocks/DemoProject";
 import WhatYourWillLearn from "~/components/blocks/WhatYourWillLearn";
+import StopWastingTime from "~/components/blocks/StopWastingTime";
 
 export default function Home() {
   return (
@@ -129,6 +130,16 @@ export default function Home() {
         </section>
       </div>
       <WhatYourWillLearn />
+      <footer className="flex flex-col">
+        <StopWastingTime />
+        <Link
+          href="https://calendly.com/mateusppa10/mentoria"
+          target="_blank"
+          className="mt-6 animate-bounce rounded-full bg-primary px-7 py-4 text-center text-xl font-bold text-black transition-colors hover:bg-accent hover:text-base hover:text-xl lg:w-full"
+        >
+          Faça seu agendamento gratuito
+        </Link>
+      </footer>
       {/* Seção de projetos diversos utilizando o card hover do aceternity" */}
       {/* Colocar uma seção dizendo: "Constra um sistema que realmente importa para o mercado" e mostrar utilizando a animação de pc com um sistema de CRM */}
       {/* Colocar em uma seção a imagem do Jira cheia de itens */}
