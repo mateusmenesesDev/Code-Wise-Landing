@@ -1,6 +1,7 @@
 import React from "react";
 import { MacbookScroll } from "../ui/macbook-scroll";
 import Image from "next/image";
+import crmImage from "/public/images/crm.png";
 
 export function DemoProject() {
   return (
@@ -14,7 +15,7 @@ export function DemoProject() {
               </h2>
             </div>
           }
-          src="/images/crm.png"
+          src={crmImage}
         />
       </div>
       <div className="mb-6 md:hidden">
@@ -25,7 +26,7 @@ export function DemoProject() {
         <div className="flex justify-center">
           <Image
             placeholder="blur"
-            src="/images/crm.png"
+            src={crmImage}
             width={600}
             height={600}
             alt="CRM"

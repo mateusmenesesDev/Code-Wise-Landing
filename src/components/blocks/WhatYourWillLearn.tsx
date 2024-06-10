@@ -2,42 +2,49 @@ import { CardContainer, CardBody, CardItem } from "../ui/3d-card";
 import { DemoProject } from "./DemoProject";
 import Image from "next/image";
 
+import crmImage from "/public/images/crm.png";
+import ecommerceImage from "/public/images/ecommerce.png";
+import agendamentoImage from "/public/images/agendamento.png";
+import projetosImage from "/public/images/projetos.png";
+import financasImage from "/public/images/financas.png";
+import dashboardImage from "/public/images/dashboard.png";
+
 const projects = [
   {
     title: "CRM",
     description:
       "Construa projetos que possuem multiplos domínios, usando com wildcards e subdomínios.",
-    image: "/images/crm.png",
+    image: crmImage,
   },
   {
     title: "E-commerce",
     description:
       "Aprenda a criar um e-commerce completo, com sistema de pagamentos, carrinho de compras e controle de estoque.",
-    image: "/images/ecommerce.png",
+    image: ecommerceImage,
   },
   {
     title: "Sistema de agendamento",
     description:
       "Entenda como criar um sistema de agendamento completo, com notificações, e integração com calendários.",
-    image: "/images/agendamento.png",
+    image: agendamentoImage,
   },
   {
     title: "Sistema de gestão de projetos",
     description:
       "Entenda como criar um sistema de gerenciamento de projetos completo, com times, tarefas e integrações.",
-    image: "/images/projetos.png",
+    image: projetosImage,
   },
   {
     title: "Sistema de gestão de finanças",
     description:
       "Entenda como criar um sistema de gerenciamento de finanças completo, com categorias, controle de receitas e despesas.",
-    image: "/images/financas.png",
+    image: financasImage,
   },
   {
     title: "Dashboards complexos",
     description:
       "Aprenda a criar dashboards complexos com gráficos, tabelas, filtros interativos e com segurança de dados. ",
-    image: "/images/dashboard.png",
+    image: dashboardImage,
   },
 ];
 

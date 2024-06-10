@@ -19,7 +19,6 @@ export default function Home() {
               width={600}
               className="w-72"
               priority
-              placeholder="blur"
               alt="Desenvolvedor Fullstack"
             />
           </div>
@@ -46,7 +45,6 @@ export default function Home() {
             height={600}
             width={600}
             priority
-            placeholder="blur"
             className="w-72 lg:w-96"
             alt="Desenvolvedor Fullstack"
           />
