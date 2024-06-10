@@ -9,7 +9,7 @@ import Footer from "~/components/blocks/Footer";
 export const metadata = {
   title: "Mentoria Fullstack",
   description: "Mentoria para Desenvolvedores Fullstack",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/favicon.png" }],
 };
 
 export default function RootLayout({
