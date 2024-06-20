@@ -31,6 +31,8 @@ export default function Home() {
           </p>
           <div className="flex justify-center lg:justify-start">
             <Link
+              data-umami-event="cta:book-mentoring"
+              data-umami-event-section="hero"
               href="https://calendly.com/mateusppa10/mentoria"
               target="_blank"
               className="animate-bounce rounded-full bg-primary px-7 py-4 text-center text-xl font-bold text-black transition-colors hover:bg-accent hover:text-base hover:text-xl lg:w-full"

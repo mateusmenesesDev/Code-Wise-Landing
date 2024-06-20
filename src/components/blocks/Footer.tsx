@@ -19,6 +19,8 @@ export default function Footer() {
         </div>
         <div className="flex">
           <Link
+            data-umami-event="cta:book-mentoring"
+            data-umami-event-section="footer"
             href="https://calendly.com/mateusppa10/mentoria"
             target="_blank"
             className="mt-6 animate-bounce rounded-full bg-primary px-7 py-4 text-center text-xl font-bold text-black transition-colors hover:bg-accent hover:text-base hover:text-xl lg:w-full"

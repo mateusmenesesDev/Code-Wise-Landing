@@ -16,6 +16,8 @@ export function Header() {
         </h1>
         <div className="flex w-full justify-end">
           <Link
+            data-umami-event="cta:book-mentoring"
+            data-umami-event-section="header"
             href="https://calendly.com/mateusppa10/mentoria"
             target="_blank"
             className="rounded-full bg-accent p-2 text-base font-semibold transition-all hover:bg-secondary hover:text-white lg:px-4 lg:text-xl"
