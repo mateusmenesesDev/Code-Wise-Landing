@@ -1,11 +1,11 @@
 import "~/styles/globals.css";
 
+import Script from "next/script";
+
 import { GeistSans } from "geist/font/sans";
 
 import { TRPCReactProvider } from "~/trpc/react";
-import { Header } from "~/components/Header";
-import Footer from "~/components/blocks/Footer";
-import Script from "next/script";
+import { Header } from '~/components/blocks/Header';
 
 export const metadata = {
   title: "Mentoria Fullstack",
@@ -20,11 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="bg-base text-white dark:bg-base-dark">
+      <body className="bg-base">
         <TRPCReactProvider>
           <Header />
           {children}
-          <Footer />
         </TRPCReactProvider>
       </body>
       {process.env.NODE_ENV === "production" && (
