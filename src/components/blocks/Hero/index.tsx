@@ -9,6 +9,7 @@ import PythonIcon from '~/components/icons/PythonIcon';
 import TailwindIcon from '~/components/icons/TailwindIcon';
 import TypescriptIcon from '~/components/icons/Typescript';
 import Button from '~/components/ui/Button';
+
 import blurImage from '/public/images/hero/blur.png';
 import dashboardImage from '/public/images/hero/dashboard.png';
 import ellipsesImage from '/public/images/hero/ellipses.png';
