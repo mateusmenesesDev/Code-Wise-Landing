@@ -15,7 +15,7 @@ const createContext = cache(() => {
 	heads.set('x-trpc-source', 'rsc');
 
 	return createTRPCContext({
-		headers: heads,
+		headers: heads
 	});
 });
 

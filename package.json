@@ -13,6 +13,10 @@
 		"ngrok": "ngrok http 3000",
 		"postinstall": "prisma generate",
 		"lint": "biome lint",
+		"lint-fix": "biome lint --write",
+		"lint-fix-force": "biome lint --write --unsafe",
+		"format": "biome format --write",
+		"format-force": "biome format --write --unsafe",
 		"start": "next start"
 	},
 	"dependencies": {

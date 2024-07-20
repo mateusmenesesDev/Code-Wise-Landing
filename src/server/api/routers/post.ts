@@ -7,7 +7,7 @@ export const postRouter = createTRPCRouter({
 		.input(z.object({ text: z.string() }))
 		.query(({ input }) => {
 			return {
-				greeting: `Hello ${input.text}`,
+				greeting: `Hello ${input.text}`
 			};
 		}),
 
@@ -19,14 +19,14 @@ export const postRouter = createTRPCRouter({
 
 			return ctx.db.post.create({
 				data: {
-					name: input.name,
-				},
+					name: input.name
+				}
 			});
 		}),
 
 	getLatest: publicProcedure.query(({ ctx }) => {
 		return ctx.db.post.findFirst({
-			orderBy: { createdAt: 'desc' },
+			orderBy: { createdAt: 'desc' }
 		});
-	}),
+	})
 });

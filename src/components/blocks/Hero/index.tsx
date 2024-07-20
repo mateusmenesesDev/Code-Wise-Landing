@@ -76,7 +76,7 @@ export default function Hero() {
 					<br />
 					<span className="mt-3 block uppercase">
 						and get your{' '}
-						<span className="rounded-lg bg-primary p-1 text-white">
+						<span className="rounded-lg bg-lime-300 px-2 py-1 font-semibold">
 							dream job
 						</span>
 					</span>

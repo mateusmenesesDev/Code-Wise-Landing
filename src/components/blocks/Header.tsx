@@ -9,7 +9,7 @@ const menuLinks = [
 	{ title: 'The Mentorship', link: 'mentorship' },
 	{ title: 'Our Projects', link: 'projects' },
 	{ title: 'The Menthor', link: 'menthor' },
-	{ title: 'Contact Us', link: 'contactus' },
+	{ title: 'Contact Us', link: 'contactus' }
 ];
 
 export function Header() {

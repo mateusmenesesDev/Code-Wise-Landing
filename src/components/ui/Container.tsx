@@ -10,7 +10,7 @@ export default function Container({ children, className }: Props) {
 		<div
 			className={cn(
 				'm-auto max-w-screen-2xl px-6 lg:px-20 2xl:px-0',
-				className,
+				className
 			)}
 		>
 			{children}

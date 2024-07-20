@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			url: 'https://www.mentoriafullstack.com/',
 			lastModified: new Date(),
 			changeFrequency: 'daily',
-			priority: 1,
-		},
+			priority: 1
+		}
 	];
 }

@@ -10,11 +10,11 @@ import { TRPCReactProvider } from '~/trpc/react';
 export const metadata = {
 	title: 'Mentoria Fullstack',
 	description: 'Mentoria para Desenvolvedores Fullstack',
-	icons: [{ rel: 'icon', url: '/favicon.png' }],
+	icons: [{ rel: 'icon', url: '/favicon.png' }]
 };
 
 export default function RootLayout({
-	children,
+	children
 }: {
 	children: React.ReactNode;
 }) {
