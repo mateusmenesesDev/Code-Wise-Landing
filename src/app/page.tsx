@@ -16,7 +16,7 @@ export default function Home() {
 					<KeyFeatures />
 				</Container>
 			</section>
-			<section className="py-12 md:py-24 lg:py-32">
+			<section className="my-6 lg:my-14">
 				<Container>
 					<MentorshipCurriculum />
 				</Container>

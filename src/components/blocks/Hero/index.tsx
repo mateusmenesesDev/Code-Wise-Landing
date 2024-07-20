@@ -27,13 +27,24 @@ export default function Hero() {
 			</h1>
 			<div>
 				<div className="absolute top-96 right-0">
-					<Image src={blurImage} alt="Hero Blur Image" className="h-52 w-52" />
+					<Image
+						priority
+						src={blurImage}
+						alt="Hero Blur Image"
+						className="h-52 w-52"
+					/>
 				</div>
 				<div className="absolute top-80 right-0">
-					<Image src={blurImage} alt="Hero Blur Image" className="h-52 w-52" />
+					<Image
+						priority
+						src={blurImage}
+						alt="Hero Blur Image"
+						className="h-52 w-52"
+					/>
 				</div>
 				<div className="absolute top-0 left-0 z-20 flex w-full items-center justify-center overflow-hidden">
 					<Image
+						priority
 						src={ellipsesImage}
 						alt="Ellipse Image"
 						className="h-dvh w-full object-cover opacity-15"
@@ -86,6 +97,7 @@ export default function Hero() {
 				</div>
 				<div className="flex justify-center">
 					<Image
+						priority
 						src={dashboardImage}
 						alt="Hero Image"
 						className="lg:max-w-[68.125rem]"
