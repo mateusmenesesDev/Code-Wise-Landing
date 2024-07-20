@@ -1,5 +1,6 @@
 import Hero from '~/components/blocks/Hero';
 import KeyFeatures from '~/components/blocks/KeyFeatures';
+import MentorshipCurriculum from '~/components/blocks/MentorshipCurriculum';
 import Container from '~/components/ui/Container';
 
 export default function Home() {
@@ -13,6 +14,11 @@ export default function Home() {
 			<section className="my-6 bg-gray-100 py-14 lg:my-8">
 				<Container>
 					<KeyFeatures />
+				</Container>
+			</section>
+			<section className="py-12 md:py-24 lg:py-32">
+				<Container>
+					<MentorshipCurriculum />
 				</Container>
 			</section>
 		</main>
