@@ -8,9 +8,10 @@ import Container from '../ui/Container';
 const menuLinks = [
 	{ title: 'The Mentorship', link: '#mentorship' },
 	{ title: 'Our Projects', link: '#projects' },
-	{ title: 'The Mentor', link: '#mentor' },
 	{ title: 'Testimonials', link: '#testimonials' },
-	{ title: 'Pricing', link: '#pricing' }
+	{ title: 'Pricing', link: '#pricing' },
+	{ title: 'Free Mentorship', link: '#free-mentorship' },
+	{ title: 'Faq', link: '#faq' }
 ];
 
 export function Header() {
