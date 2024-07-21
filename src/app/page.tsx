@@ -12,7 +12,7 @@ export default function Home() {
 					<Hero />
 				</Container>
 			</section>
-			<section className="my-6 bg-gray-100 py-14 lg:my-8">
+			<section id="mentorship" className="my-6 bg-gray-100 py-14 lg:my-8">
 				<Container>
 					<KeyFeatures />
 				</Container>
@@ -22,7 +22,7 @@ export default function Home() {
 					<MentorshipCurriculum />
 				</Container>
 			</section>
-			<section className="my-6 bg-gray-100 py-14 lg:my-8">
+			<section id="projects" className="my-6 bg-gray-100 py-14 lg:my-8">
 				<Container>
 					<ProjectShowcase />
 				</Container>

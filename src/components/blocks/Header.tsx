@@ -22,7 +22,7 @@ export function Header() {
 						{menuLinks.map((link) => (
 							<li key={link.link}>
 								<Link
-									href={`/${link.link}`}
+									href={`#${link.link}`}
 									className="font-medium transition-all hover:opacity-70"
 								>
 									{link.title}

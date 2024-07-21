@@ -7,4 +7,8 @@
       --color-base: 255 255 255;
       --color-primary:  109 51 250;
     }
+
+    html {
+      scroll-behavior: smooth;
+    }
   }
