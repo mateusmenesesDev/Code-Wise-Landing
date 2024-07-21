@@ -8,7 +8,7 @@ import { Header } from '~/components/blocks/Header';
 import { TRPCReactProvider } from '~/trpc/react';
 
 export const metadata = {
-	title: 'Mentoria Fullstack',
+	title: 'Fullstack Mentorship',
 	description: 'Mentoria para Desenvolvedores Fullstack',
 	icons: [{ rel: 'icon', url: '/favicon.png' }]
 };

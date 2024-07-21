@@ -1,3 +1,4 @@
+import FreeMentorship from '~/components/blocks/FreeMentorship';
 import Hero from '~/components/blocks/Hero';
 import KeyFeatures from '~/components/blocks/KeyFeatures';
 import MentorshipCurriculum from '~/components/blocks/MentorshipCurriculum';
@@ -37,6 +38,11 @@ export default function Home() {
 			<section id="pricing" className="my-6 bg-gray-100 py-14 lg:my-8">
 				<Container>
 					<Pricing />
+				</Container>
+			</section>
+			<section id="free-mentorship" className="my-12 lg:my-24">
+				<Container>
+					<FreeMentorship />
 				</Container>
 			</section>
 		</main>
