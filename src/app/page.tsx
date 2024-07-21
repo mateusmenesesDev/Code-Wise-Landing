@@ -1,6 +1,7 @@
 import Hero from '~/components/blocks/Hero';
 import KeyFeatures from '~/components/blocks/KeyFeatures';
 import MentorshipCurriculum from '~/components/blocks/MentorshipCurriculum';
+import Pricing from '~/components/blocks/Pricing';
 import ProjectShowcase from '~/components/blocks/ProjectShowcase';
 import Testimonials from '~/components/blocks/Testimonials';
 import Container from '~/components/ui/Container';
@@ -28,9 +29,14 @@ export default function Home() {
 					<ProjectShowcase />
 				</Container>
 			</section>
-			<section id="testimonials" className="my-8 lg:my-14">
+			<section id="testimonials" className="my-12 lg:my-24">
 				<Container>
 					<Testimonials />
+				</Container>
+			</section>
+			<section id="pricing" className="my-6 bg-gray-100 py-14 lg:my-8">
+				<Container>
+					<Pricing />
 				</Container>
 			</section>
 		</main>
