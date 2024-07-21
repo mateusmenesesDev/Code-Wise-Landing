@@ -10,6 +10,8 @@ export default function Footer() {
 				<p className="text-xl">Developed by Matthew</p>
 				<div className="flex flex-col items-end">
 					<Link
+						target="_blank"
+						rel="noreferrer noopener"
 						href="https://www.linkedin.com/in/mateus-meneses/"
 						className="flex items-center gap-2"
 					>
