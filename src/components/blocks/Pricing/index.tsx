@@ -6,7 +6,7 @@ export default function Pricing() {
 	return (
 		<div>
 			<Heading className="mb-12 text-center">Choose your plan</Heading>
-			<div className="flex items-center gap-4">
+			<div className="flex flex-col flex-wrap lg:flex-row xl:items-center gap-4">
 				{prices.map((price, i) => (
 					<PriceCard
 						key={price.title}

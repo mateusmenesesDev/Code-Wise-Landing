@@ -17,7 +17,7 @@ export default function PriceCard({
 	return (
 		<div
 			className={cn(
-				'flex min-h-[31rem] flex-col rounded-xl border-2 p-16 shadow-md',
+				'flex xl:min-h-[31rem] flex-col rounded-xl border-2 p-16 shadow-md',
 				{
 					'border-none bg-primary text-white': isHighlighted
 				},
