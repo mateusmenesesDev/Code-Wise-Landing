@@ -11,7 +11,7 @@ export const testimonials: Testimonial[] = [
 	{
 		name: 'Luis Felipe',
 		quote:
-			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			'With this mentoring, I got my first opportunity as a developer! The mentorship was very important for my career as a developer. The mentor is very attentive and has a lot of knowledge to share.',
 		linkedin: 'https://www.linkedin.com/in/luis-felipe-da-rocha-a4a331295/'
 	},
 	{
