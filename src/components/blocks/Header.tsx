@@ -17,7 +17,7 @@ export function Header() {
 	return (
 		<header className="relative z-50 py-6">
 			<Container className="flex items-center justify-between gap-4">
-				<span className="flex-1 font-semibold">Mentoria fullstack</span>
+				<span className="flex-1 font-semibold">Fullstack Mentorship</span>
 				<nav className="hidden lg:block">
 					<ul className="flex gap-4">
 						{menuLinks.map((link) => (
