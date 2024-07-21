@@ -33,7 +33,9 @@ export default function PriceCard({
 					</li>
 				))}
 			</ul>
-			<span className="mt-6 mb-10 block text-xl lg:text-4xl">${price}</span>
+			<span className="mt-6 mb-10 block font-semibold text-2xl lg:text-4xl">
+				${price}
+			</span>
 			<button
 				type="button"
 				className={cn(
