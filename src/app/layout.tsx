@@ -4,6 +4,7 @@ import Script from 'next/script';
 
 import { GeistSans } from 'geist/font/sans';
 
+import Footer from '~/components/blocks/Footer';
 import { Header } from '~/components/blocks/Header';
 import { TRPCReactProvider } from '~/trpc/react';
 
@@ -24,6 +25,7 @@ export default function RootLayout({
 				<TRPCReactProvider>
 					<Header />
 					{children}
+					<Footer />
 				</TRPCReactProvider>
 			</body>
 			{process.env.NODE_ENV === 'production' && (
