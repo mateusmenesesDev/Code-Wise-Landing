@@ -15,7 +15,10 @@ const config = {
 				white: '#fff',
 				transparent: 'transparent',
 				current: 'currentColor',
-				base: 'rgb(var(--color-base) / <alpha-value>)',
+				base: {
+					100: 'rgb(var(--color-base-100) / <alpha-value>)',
+					200: 'rgb(var(--color-base-200) / <alpha-value>)'
+				},
 				primary: 'rgb(var(--color-primary) / <alpha-value>)'
 			},
 			screens: {

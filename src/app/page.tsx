@@ -2,6 +2,7 @@ import Hero from '~/components/blocks/Hero';
 import KeyFeatures from '~/components/blocks/KeyFeatures';
 import MentorshipCurriculum from '~/components/blocks/MentorshipCurriculum';
 import ProjectShowcase from '~/components/blocks/ProjectShowcase';
+import Testimonials from '~/components/blocks/Testimonials';
 import Container from '~/components/ui/Container';
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
 					<KeyFeatures />
 				</Container>
 			</section>
-			<section className="my-6 lg:my-14">
+			<section className="my-8 lg:my-14">
 				<Container>
 					<MentorshipCurriculum />
 				</Container>
@@ -25,6 +26,11 @@ export default function Home() {
 			<section id="projects" className="my-6 bg-gray-100 py-14 lg:my-8">
 				<Container>
 					<ProjectShowcase />
+				</Container>
+			</section>
+			<section id="testimonials" className="my-8 lg:my-14">
+				<Container>
+					<Testimonials />
 				</Container>
 			</section>
 		</main>

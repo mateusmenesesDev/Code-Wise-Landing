@@ -6,10 +6,11 @@ import Button from '../ui/Button';
 import Container from '../ui/Container';
 
 const menuLinks = [
-	{ title: 'The Mentorship', link: 'mentorship' },
-	{ title: 'Our Projects', link: 'projects' },
-	{ title: 'The Menthor', link: 'menthor' },
-	{ title: 'Contact Us', link: 'contactus' }
+	{ title: 'The Mentorship', link: '#mentorship' },
+	{ title: 'Our Projects', link: '#projects' },
+	{ title: 'The Mentor', link: '#mentor' },
+	{ title: 'Testimonials', link: '#testimonials' },
+	{ title: 'Pricing', link: '#pricing' }
 ];
 
 export function Header() {
@@ -22,7 +23,7 @@ export function Header() {
 						{menuLinks.map((link) => (
 							<li key={link.link}>
 								<Link
-									href={`#${link.link}`}
+									href={`${link.link}`}
 									className="font-medium transition-all hover:opacity-70"
 								>
 									{link.title}
