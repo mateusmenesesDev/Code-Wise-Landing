@@ -2,10 +2,13 @@ import '~/styles/globals.css';
 
 import Script from 'next/script';
 
+import { Toaster } from 'sonner';
+
 import { GeistSans } from 'geist/font/sans';
 
 import Footer from '~/components/blocks/Footer';
 import { Header } from '~/components/blocks/Header';
+
 import { TRPCReactProvider } from '~/trpc/react';
 
 export const metadata = {
@@ -22,6 +25,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={`${GeistSans.variable}`}>
 			<body className="bg-base">
+				<Toaster />
 				<TRPCReactProvider>
 					<Header />
 					{children}

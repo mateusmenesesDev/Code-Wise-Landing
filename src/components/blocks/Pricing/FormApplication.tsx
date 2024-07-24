@@ -1,7 +1,11 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import Link from 'next/link';
+import { useState } from 'react';
 import { type SubmitHandler, useForm } from 'react-hook-form';
+import { toast } from 'sonner';
+import { fontPoppins } from '~/assets/fonts/poppins';
 
 import Button from '~/components/ui/Button';
 import LoadingSpinner from '~/components/ui/LoadingSpinner';
@@ -18,9 +22,46 @@ export default function FormApplication() {
 		resolver: zodResolver(applicationSchema)
 	});
 
-	const onSubmit: SubmitHandler<Application> = (data) => {
-		console.log(data);
+	const [isSubmitted, setIsSubmitted] = useState(false);
+
+	const onSubmit: SubmitHandler<Application> = async (data) => {
+		try {
+			const request = await fetch('/api/new-lead', {
+				method: 'POST',
+				body: JSON.stringify(data),
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			});
+
+			if (!request.ok) {
+				throw new Error('Failed to submit application');
+			}
+
+			setIsSubmitted(true);
+		} catch (err) {
+			toast.error('Something went wrong, please try again later');
+			process.env.NODE_ENV === 'development' && console.error(err);
+
+			setIsSubmitted(false);
+		}
 	};
+
+	if (isSubmitted) {
+		return (
+			<div className="flex flex-col justify-center pt-4 text-center">
+				<span className="mb-2 font-semibold text-xl">Just one more step!</span>
+				<Link
+					href="https://calendly.com/mateusppa10/free-mentorship"
+					target="_blank"
+					rel="noreferrer noopener"
+					className={`rounded-md bg-primary p-2 text-white transition-colors hover:bg-primary/75 disabled:bg-primary/40 md:p-4 ${fontPoppins.className} font-semibold text-base`}
+				>
+					Schedule your first mentorship session!
+				</Link>
+			</div>
+		);
+	}
 
 	return (
 		<form

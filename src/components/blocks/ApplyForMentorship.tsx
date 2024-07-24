@@ -32,7 +32,7 @@ export function ApplyForMentorship({ isHighlighted, price }: Props) {
 					Apply
 				</button>
 			</DialogTrigger>
-			<DialogContent className="sm:max-w-[425px]">
+			<DialogContent className="">
 				<DialogHeader>
 					<DialogTitle className="mb-1 text-primary text-xl">
 						{price.title} Application
