@@ -1,6 +1,7 @@
 import { CheckIcon } from 'lucide-react';
 import { cn } from '~/lib/utils';
 import type { Price } from '~/types/Price.type';
+import { ApplyForMentorship } from '../ApplyForMentorship';
 
 type Props = Price & {
 	className?: string;
@@ -36,18 +37,10 @@ export default function PriceCard({
 			<span className="mt-6 mb-10 block font-semibold text-2xl lg:text-4xl">
 				${price}
 			</span>
-			<button
-				type="button"
-				className={cn(
-					'mt-auto w-[12rem] rounded-lg bg-primary py-4 text-white transition-colors hover:bg-primary/80',
-					{
-						'bg-white text-black hover:bg-black/40 hover:text-white':
-							isHighlighted
-					}
-				)}
-			>
-				Apply
-			</button>
+			<ApplyForMentorship
+				isHighlighted={isHighlighted}
+				price={{ features, price, title }}
+			/>
 		</div>
 	);
 }

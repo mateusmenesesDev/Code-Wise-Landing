@@ -10,7 +10,9 @@ export default function Pricing() {
 				{prices.map((price, i) => (
 					<PriceCard
 						key={price.title}
-						{...price}
+						features={price.features}
+						title={price.title}
+						price={price.price}
 						className="flex-1"
 						isHighlighted={i === 1}
 					/>

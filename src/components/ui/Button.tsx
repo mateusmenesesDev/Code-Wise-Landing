@@ -11,7 +11,7 @@ export default function Button({ className, ...rest }: Props) {
 		<button
 			{...rest}
 			className={cn(
-				`rounded-md bg-primary p-2 text-white transition-colors hover:bg-primary/75 md:p-4 ${fontPoppins.className} font-semibold text-base`,
+				`rounded-md bg-primary p-2 text-white transition-colors hover:bg-primary/75 disabled:bg-primary/40 md:p-4 ${fontPoppins.className} font-semibold text-base`,
 				className
 			)}
 		/>
