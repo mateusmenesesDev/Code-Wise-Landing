@@ -3,6 +3,10 @@
 		{
 			"source": "/stats/:match*",
 			"destination": "https://mentoria-analytics.vercel.app/script.js"
+		},
+		{
+			"source": "/",
+			"destination": "/teste"
 		}
 	]
 }
