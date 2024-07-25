@@ -5,6 +5,15 @@
 await import('./src/env.js');
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+	async rewrites() {
+		return [
+			{
+				source: '/stats/:match*',
+				destination: 'https://analytics.umami.is/:match*'
+			}
+		];
+	}
+};
 
 export default config;
