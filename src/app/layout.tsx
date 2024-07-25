@@ -35,7 +35,7 @@ export default function RootLayout({
 			{process.env.NODE_ENV === 'production' && (
 				<Script
 					defer
-					src="/stats/script.js"
+					src="https://mentoria-analytics.vercel.app/script.js"
 					data-website-id="b78fafaa-5d11-4511-9b8f-1b4a46ac7399"
 				/>
 			)}
