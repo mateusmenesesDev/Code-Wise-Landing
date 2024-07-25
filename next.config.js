@@ -10,7 +10,7 @@ const config = {
 		return [
 			{
 				source: '/stats/:match*',
-				destination: 'https://analytics.umami.is/:match*'
+				destination: 'https://mentoria-analytics.vercel.app/script.js'
 			}
 		];
 	}
