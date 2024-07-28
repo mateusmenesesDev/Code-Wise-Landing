@@ -1,5 +1,5 @@
 import { testimonials } from '~/constants/testimonials';
-import Heading from '../Heading';
+import Heading from '../../ui/Heading';
 import TestimonialCard from './TestimonialCard';
 
 export default function Testimonials() {

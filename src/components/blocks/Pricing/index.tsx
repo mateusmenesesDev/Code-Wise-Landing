@@ -1,5 +1,5 @@
 import { prices } from '~/constants/prices';
-import Heading from '../Heading';
+import Heading from '../../ui/Heading';
 import PriceCard from './PriceCard';
 
 export default function Pricing() {

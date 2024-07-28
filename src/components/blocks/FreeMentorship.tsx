@@ -1,5 +1,5 @@
 import Calendly from '../Calendly';
-import Heading from './Heading';
+import Heading from '../ui/Heading';
 
 export default function FreeMentorship() {
 	return (
