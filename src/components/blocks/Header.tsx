@@ -21,13 +21,13 @@ export function Header() {
 				<span className="flex-1 font-semibold">Fullstack Mentorship</span>
 				<nav className="hidden lg:block">
 					<ul className="flex gap-4">
-						{menuLinks.map((link) => (
-							<li key={link.link}>
+						{menuLinks.map(({ link, title }) => (
+							<li key={link}>
 								<Link
-									href={`${link.link}`}
+									href={`${link}`}
 									className="font-medium transition-all hover:opacity-70"
 								>
-									{link.title}
+									{title}
 								</Link>
 							</li>
 						))}
