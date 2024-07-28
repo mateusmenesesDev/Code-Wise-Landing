@@ -1,5 +1,11 @@
 import type { Project } from '~/types/Project.type';
 
+import blogImage from '/public/images/projects/blog.png';
+import crmImage from '/public/images/projects/crm.png';
+import ecommerceImage from '/public/images/projects/ecommerce.png';
+import lmsImage from '/public/images/projects/lms.png';
+import socialMediaImage from '/public/images/projects/socialmedia.png';
+
 export const projects: Project[] = [
 	{
 		title: 'Personal Blog',
@@ -14,7 +20,7 @@ export const projects: Project[] = [
 			'Analytics and tracking integration'
 		],
 		image: {
-			src: require('/public/images/projects/blog.png'),
+			src: blogImage,
 			alt: 'Personal Blog'
 		}
 	},
@@ -32,7 +38,7 @@ export const projects: Project[] = [
 			'Sales dashboard and reporting'
 		],
 		image: {
-			src: require('/public/images/projects/ecommerce.png'),
+			src: ecommerceImage,
 			alt: 'E-commerce Platform'
 		}
 	},
@@ -49,7 +55,7 @@ export const projects: Project[] = [
 			'Customizable fields and workflows'
 		],
 		image: {
-			src: require('/public/images/projects/crm.png'),
+			src: crmImage,
 			alt: 'Customer Relationship Management (CRM)'
 		}
 	},
@@ -66,7 +72,7 @@ export const projects: Project[] = [
 			'Analytics and reporting'
 		],
 		image: {
-			src: require('/public/images/projects/lms.png'),
+			src: lmsImage,
 			alt: 'Learning Management System (LMS)'
 		}
 	},
@@ -83,7 +89,7 @@ export const projects: Project[] = [
 			'Analytics and engagement tracking'
 		],
 		image: {
-			src: require('/public/images/projects/socialmedia.png'),
+			src: socialMediaImage,
 			alt: 'Social Media App'
 		}
 	}
