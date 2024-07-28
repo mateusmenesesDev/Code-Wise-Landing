@@ -23,19 +23,6 @@ const config = {
 			},
 			screens: {
 				'md+': '900px'
-			},
-			animation: {
-				'meteor-effect': 'meteor 5s linear infinite'
-			},
-			keyframes: {
-				meteor: {
-					'0%': { transform: 'rotate(215deg) translateX(0)', opacity: '1' },
-					'70%': { opacity: '1' },
-					'100%': {
-						transform: 'rotate(215deg) translateX(-500px)',
-						opacity: '0'
-					}
-				}
 			}
 		},
 		container: {
@@ -44,6 +31,20 @@ const config = {
 			screens: {
 				'2xl': '1400px'
 			}
+		},
+		keyframes: {
+			'accordion-down': {
+				from: { height: '0' },
+				to: { height: 'var(--radix-accordion-content-height)' }
+			},
+			'accordion-up': {
+				from: { height: 'var(--radix-accordion-content-height)' },
+				to: { height: '0' }
+			}
+		},
+		animation: {
+			'accordion-down': 'accordion-down 0.2s ease-out',
+			'accordion-up': 'accordion-up 0.2s ease-out'
 		}
 	},
 	plugins: [require('tailwindcss-animate')]

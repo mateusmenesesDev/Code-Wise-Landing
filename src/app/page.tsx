@@ -1,3 +1,4 @@
+import Faq from '~/components/blocks/Faq';
 import FreeMentorship from '~/components/blocks/FreeMentorship';
 import Hero from '~/components/blocks/Hero';
 import KeyFeatures from '~/components/blocks/KeyFeatures';
@@ -43,6 +44,11 @@ export default function Home() {
 			<section id="free-mentorship" className="my-12 lg:my-24">
 				<Container>
 					<FreeMentorship />
+				</Container>
+			</section>
+			<section className="pb-16">
+				<Container>
+					<Faq />
 				</Container>
 			</section>
 		</main>
