@@ -13,7 +13,7 @@ import { TRPCReactProvider } from '~/trpc/react';
 
 export const metadata = {
 	title: 'Fullstack Mentorship',
-	description: 'Mentoria para Desenvolvedores Fullstack',
+	description: 'Get mentored by experienced fullstack developers',
 	icons: [{ rel: 'icon', url: '/favicon.png' }]
 };
 
