@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-import Button from '../ui/Button';
+import { ButtonLink } from '../ui/Button';
 import Container from '../ui/Container';
 
 const menuLinks = [
@@ -34,7 +34,7 @@ export function Header() {
 					</ul>
 				</nav>
 				<div className="flex flex-1 justify-end">
-					<Button>Schedule my mentorship</Button>
+					<ButtonLink href="#pricing">Schedule my mentorship</ButtonLink>
 				</div>
 			</Container>
 		</header>

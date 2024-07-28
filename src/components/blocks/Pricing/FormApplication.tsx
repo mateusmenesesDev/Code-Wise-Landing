@@ -1,17 +1,19 @@
 'use client';
 
-import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
 import { useState } from 'react';
+
+import { zodResolver } from '@hookform/resolvers/zod';
 import { type SubmitHandler, useForm } from 'react-hook-form';
-import { toast } from 'sonner';
-import { fontPoppins } from '~/assets/fonts/poppins';
-
-import Button from '~/components/ui/Button';
-import LoadingSpinner from '~/components/ui/LoadingSpinner';
-
 import { applicationSchema } from '~/schemas/application.schema';
 import type { Application } from '~/types/Application.type';
+
+import { toast } from 'sonner';
+
+import { Button } from '~/components/ui/Button';
+import LoadingSpinner from '~/components/ui/LoadingSpinner';
+
+import { fontPoppins } from '~/assets/fonts/poppins';
 
 export default function FormApplication() {
 	const {

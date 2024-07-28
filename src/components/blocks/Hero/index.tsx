@@ -8,7 +8,7 @@ import NextjsIcon from '~/components/icons/NextjsIcon';
 import PythonIcon from '~/components/icons/PythonIcon';
 import TailwindIcon from '~/components/icons/TailwindIcon';
 import TypescriptIcon from '~/components/icons/Typescript';
-import Button from '~/components/ui/Button';
+import { ButtonLink } from '~/components/ui/Button';
 
 import blurImage from '/public/images/hero/blur.png';
 import dashboardImage from '/public/images/hero/dashboard.png';
@@ -93,7 +93,9 @@ export default function Hero() {
 					</span>
 				</h1>
 				<div className="mt-11 mb-8 flex justify-center">
-					<Button>Schedule Free Mentorship</Button>
+					<ButtonLink href="#free-mentorship">
+						Schedule Free Mentorship
+					</ButtonLink>
 				</div>
 				<div className="flex justify-center">
 					<Image
