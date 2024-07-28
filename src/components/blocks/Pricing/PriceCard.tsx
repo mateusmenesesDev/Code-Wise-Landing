@@ -34,9 +34,10 @@ export default function PriceCard({
 					</li>
 				))}
 			</ul>
-			<span className="mt-6 mb-10 block font-semibold text-2xl lg:text-4xl">
+			<span className="mt-6 block font-semibold text-2xl lg:text-4xl">
 				${price}
 			</span>
+			<p className="mb-10 text-sm">Monthly payment. No subscription required</p>
 			<ApplyForMentorship
 				isHighlighted={isHighlighted}
 				price={{ features, price, title }}
